@@ -13,6 +13,14 @@ var soma = 0
 
 // percorrer a lista e fazer a somatória dos elementos
 
-let media = 0
+for (numero of entrada) {
+    soma += numero;
+}
+        
+
+console.log(soma)
+
+
+let media = soma / entrada.length;
 
 console.log(media.toFixed(1))
