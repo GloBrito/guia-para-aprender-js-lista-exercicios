@@ -5,10 +5,28 @@
  * trabalhando ou de folga. Difícil fazer planos.
  * Exemplo, como saber no dia 12 de Outubro ele vai estar trabalhando ou de folga?
  * Como fazer um programa que liste os próximos 3 meses com dias de trabalho/folga?
- * 
+ *
  */
 
 // Entrada
 // Pŕoxima volta
 
 // Saída com base na próxima folga, calcular dia de trabalho/folga
+
+let dia = new Date();
+
+for (x = 0; x < 12; x++) {
+  console.log("\nDias trabalhados");
+
+  for (i = 0; i < 6; i++) {
+    dia.setDate(dia.getDate() + 1);
+    console.log(dia.toLocaleDateString());
+  }
+
+  console.log("\nDias de folga");
+
+  for (i = 0; i < 2; i++) {
+    dia.setDate(dia.getDate() + 1);
+    console.log(dia.toLocaleDateString());
+  }
+}
