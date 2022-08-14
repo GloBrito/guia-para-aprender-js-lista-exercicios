@@ -30,12 +30,20 @@
  */
 
 // Entrada
-var texto = 'abacate'
+let texto = 'azbacatZe'
 
 // implemente aqui uma lógica para criptografar o texto
 
-var textoCripto = 'bcbdbuf'
+let textoCripto = ''
+
+for (i of texto){
+    if (i === 'Z'){
+        textoCripto += '$';
+    } else if (i === 'z'){
+        textoCripto += '@';
+    } else{
+        textoCripto += String.fromCharCode(i.charCodeAt(0)+1);
+    }
+}
 
 console.log(textoCripto)
-
-

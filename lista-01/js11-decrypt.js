@@ -12,9 +12,19 @@
  */
 
 // Entrada
-var texto = "bcbdbuf";
+let texto = "bcbdbuf";
 
 // implemente aqui uma lógica para descriptografar o texto
-var textoDecripto = "abacate";
+let textoDeCripto = "";
 
-console.log(textoDecripto);
+for (i of texto){
+    if (i === '$'){
+        textoDeCripto += 'Z';
+    } else if (i === '@'){
+        textoDeCripto += 'z';
+    } else {
+        textoDeCripto += String.fromCharCode(i.charCodeAt(0) - 1);
+    }
+}
+
+console.log(textoDeCripto)
