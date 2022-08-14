@@ -8,9 +8,14 @@
  */
 
 // Entrada
-var entrada = [1,1,40]
+var entrada = [1,1,40, 345]
 
 var maior = 0
 
+for (let i = 0; i < entrada.length; i++) {
+    const element = entrada[i];
+    
+    element > maior ? maior = element : maior
+}
 
 console.log(maior)
